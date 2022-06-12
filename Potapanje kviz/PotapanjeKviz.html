@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Title</title>
+	<link rel="stylesheet" href="Potapanje.css">
+</head>
+<body>
+
+	<div id="left">
+		
+	</div>
+
+	<div id="right">
+		
+	</div>
+
+	<div id="main">
+		
+		<div id="ContinueButton" class="offScreen" onclick="Continue()"><img src="CheckWhite.png"></div>
+		
+		<div id="boardpadding">
+		<div id="board">
+		
+			<div class="tile" id="a1"></div>
+			<div class="tile" id="a2"></div>
+			<div class="tile" id="a3"></div>
+			<div class="tile" id="a4"></div>
+			<div class="tile" id="a5"></div>
+			<div class="tile" id="a6"></div>
+			<div class="tile" id="a7"></div>
+			<div class="tile" id="a8"></div>
+			<div class="tile" id="a9"></div>
+			<div class="tile" id="a10"></div>
+			
+			<div class="tile" id="b1"></div>
+			<div class="tile" id="b2"></div>
+			<div class="tile" id="b3"></div>
+			<div class="tile" id="b4"></div>
+			<div class="tile" id="b5"></div>
+			<div class="tile" id="b6"></div>
+			<div class="tile" id="b7"></div>
+			<div class="tile" id="b8"></div>
+			<div class="tile" id="b9"></div>
+			<div class="tile" id="b10"></div>
+			
+			<div class="tile" id="c1"></div>
+			<div class="tile" id="c2"></div>
+			<div class="tile" id="c3"></div>
+			<div class="tile" id="c4"></div>
+			<div class="tile" id="c5"></div>
+			<div class="tile" id="c6"></div>
+			<div class="tile" id="c7"></div>
+			<div class="tile" id="c8"></div>
+			<div class="tile" id="c9"></div>
+			<div class="tile" id="c10"></div>
+			
+			<div class="tile" id="d1"></div>
+			<div class="tile" id="d2"></div>
+			<div class="tile" id="d3"></div>
+			<div class="tile" id="d4"></div>
+			<div class="tile" id="d5"></div>
+			<div class="tile" id="d6"></div>
+			<div class="tile" id="d7"></div>
+			<div class="tile" id="d8"></div>
+			<div class="tile" id="d9"></div>
+			<div class="tile" id="d10"></div>
+			
+			<div class="tile" id="e1"></div>
+			<div class="tile" id="e2"></div>
+			<div class="tile" id="e3"></div>
+			<div class="tile" id="e4"></div>
+			<div class="tile" id="e5"></div>
+			<div class="tile" id="e6"></div>
+			<div class="tile" id="e7"></div>
+			<div class="tile" id="e8"></div>
+			<div class="tile" id="e9"></div>
+			<div class="tile" id="e10"></div>
+			
+			<div class="tile" id="f1"></div>
+			<div class="tile" id="f2"></div>
+			<div class="tile" id="f3"></div>
+			<div class="tile" id="f4"></div>
+			<div class="tile" id="f5"></div>
+			<div class="tile" id="f6"></div>
+			<div class="tile" id="f7"></div>
+			<div class="tile" id="f8"></div>
+			<div class="tile" id="f9"></div>
+			<div class="tile" id="f10"></div>
+			
+			<div class="tile" id="g1"></div>
+			<div class="tile" id="g2"></div>
+			<div class="tile" id="g3"></div>
+			<div class="tile" id="g4"></div>
+			<div class="tile" id="g5"></div>
+			<div class="tile" id="g6"></div>
+			<div class="tile" id="g7"></div>
+			<div class="tile" id="g8"></div>
+			<div class="tile" id="g9"></div>
+			<div class="tile" id="g10"></div>
+			
+			<div class="tile" id="h1"></div>
+			<div class="tile" id="h2"></div>
+			<div class="tile" id="h3"></div>
+			<div class="tile" id="h4"></div>
+			<div class="tile" id="h5"></div>
+			<div class="tile" id="h6"></div>
+			<div class="tile" id="h7"></div>
+			<div class="tile" id="h8"></div>
+			<div class="tile" id="h9"></div>
+			<div class="tile" id="h10"></div>
+			
+			<div class="tile" id="i1"></div>
+			<div class="tile" id="i2"></div>
+			<div class="tile" id="i3"></div>
+			<div class="tile" id="i4"></div>
+			<div class="tile" id="i5"></div>
+			<div class="tile" id="i6"></div>
+			<div class="tile" id="i7"></div>
+			<div class="tile" id="i8"></div>
+			<div class="tile" id="i9"></div>
+			<div class="tile" id="i10"></div>
+			
+			<div class="tile" id="j1"></div>
+			<div class="tile" id="j2"></div>
+			<div class="tile" id="j3"></div>
+			<div class="tile" id="j4"></div>
+			<div class="tile" id="j5"></div>
+			<div class="tile" id="j6"></div>
+			<div class="tile" id="j7"></div>
+			<div class="tile" id="j8"></div>
+			<div class="tile" id="j9"></div>
+			<div class="tile" id="j10"></div>
+			
+			
+			<!-- board kraj -->
+		</div>
+			<!-- board padding kraj -->
+		</div>
+		
+		<div id="power">
+			<div id="powerSec1">
+			</div>
+			<div id="powerSec2">
+			</div>
+			<!-- power kraj (power bar) -->
+		</div>
+		
+		<div id="subCard" class="card">
+			<div class="ShipSelector" style="top: 4%;">
+				<div id="Ship4Selector" onclick="ChooseShip(4)"></div>
+				<div><p id="Ship4">1</p></div>
+			</div>
+			<div class="ShipSelector" style="top: 23.2%;">
+				<div id="Ship3Selector" onclick="ChooseShip(3)"><img></div>
+				<div><p id="Ship3">2</p></div>
+			</div>
+			<div class="ShipSelector" style="top: 42.4%;">
+				<div id="Ship2Selector" onclick="ChooseShip(2)"><img></div>
+				<div><p id="Ship2">3</p></div>
+			</div>
+			<div class="ShipSelector" style="top: 61.6%;">
+				<div id="Ship1Selector" onclick="ChooseShip(1)"><img></div>
+				<div><p id="Ship1">4</p></div>
+			</div>
+			<div class="BottomRow" style="top: 81.9%;">
+				<div id="RotateButton" onclick="RotateShip()"><img src="RotateIconWhite2.png"></div>
+				<div id="RemoveButton" onclick="RemoveShip()"><img src="remove.png"></div>
+			</div>
+			<!--<table>
+				<tr>
+					<th><img src="submarine.png"></th>
+					<th>Podmornice</th>
+				</tr>
+				<tr>
+					<td>4:</td>
+					<td id="s4num">1</td>
+				</tr>
+				<tr>
+					<td>3:</td>
+					<td id="s3num">2</td>
+				</tr>
+				<tr>
+					<td>2:</td>
+					<td id="s2num">3</td>
+				</tr>
+				<tr>
+					<td>1:</td>
+					<td id="s1num">4</td>
+				</tr>
+			</table>-->
+			
+		</div>
+		
+		<div id="helperCard" class="card invisible2">
+			<div id="helperImg">
+			</div>
+			<div id="helperQuestion">
+				<p>Test paragraf test paragraf test paragraf test paragraf test paragraf test paragraf test paragraf test paragraf test paragraf test paragraf</p>
+			</div>
+		</div>
+		
+		<!-- main kraj -->
+	</div>
+
+<script src="Potapanje.js"></script>
+</body>
+</html>
